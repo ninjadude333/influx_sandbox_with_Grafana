@@ -1,0 +1,10 @@
+apiVersion: 1
+
+datasources:
+  - name: InfluxDB
+    type: influxdb
+    access: Browser
+    database: telegraf
+    user: 
+    password: 
+    url: http://localhost:8086
