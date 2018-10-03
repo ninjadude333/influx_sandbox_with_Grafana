@@ -1,6 +1,16 @@
 # influx_sandbox_with_Grafana
 the official influxDB sandbox with Grafana added
 
+In order to run the InfluxdB Sandbox with grafana do the following:
+1.	Clone to this repo:
+2.	Edit the .env file and put the wanted port mapping for the modules (for default ports don’t change anything.)
+3.	Run ./sandbox up
+4.	Have fun.
+In order to run multiple sandboxes on the same machine: 
+1.	Copy the cloned folder to a new folder.
+2.	Change the port mappings to new ports that will not overlap previous sandboxes already running.
+3.	Run ./sandbox up
+
 
 # TICK Sandbox
 
