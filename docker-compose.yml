@@ -65,8 +65,8 @@ services:
   kapacitor:
   # Full tag list: https://hub.docker.com/r/library/kapacitor/tags/
     build:
-      context: ./images/kapacitor/
-      dockerfile: ./${TYPE}/Dockerfile
+      context: ./images/kapacitor/latest
+      dockerfile: Dockerfile
       args:
         KAPACITOR_TAG: ${KAPACITOR_TAG}
     image: "kapacitor"
@@ -107,8 +107,8 @@ services:
       - influxdb
       - telegraf
 
-  documentation:
-    build:
-      context: ./documentation
-    ports:
-      - "${DOCUMENTATION_PORT}:3010"
+#  documentation:
+ #   build:
+  #    context: ./documentation
+   # ports:
+    #  - "${DOCUMENTATION_PORT}:3010"
