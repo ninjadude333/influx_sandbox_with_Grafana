@@ -1,0 +1,17 @@
+Conda config:
+
+./conda config --set always_yes True
+./conda config --set proxy_servers http:http://genproxy.amdocs.com:8080
+./conda config --set proxy_servers https:http://genproxy.amdocs.com:8080
+
+./conda install --channel "anaconda" pandas
+./conda install --channel "anaconda" scipy
+./conda install --channel "anaconda" statsmodels
+./conda install --channel "anaconda" h5py
+./conda install --channel "conda-forge" fbprophet
+./conda install --channel "conda-forge" pystan
+./conda install --channel "conda-forge" toml
+./conda install --channel "conda-forge" protobuf
+./conda install --channel "anaconda" scikit-learn
+
+./pip install /home/dockerFile/influxdb-5.0.0-py2.py3-none-any.whl
