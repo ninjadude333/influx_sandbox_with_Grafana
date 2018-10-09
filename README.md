@@ -10,16 +10,17 @@ the official influxDB sandbox with Grafana added
 
 # How to run ?
 In order to run the InfluxdB Sandbox with grafana do the following:
-1.	Clone to this repo:
-2.	Edit the .env file and put the wanted port mapping for the modules (for default ports don’t change anything.)
-3.	Run ./sandbox up
-4.	Have fun.
+1.	Clone to this repo: (using amdocs domain user and password)
+2.  Rename directory to the convention of SANDBOX-{UserName}-{Starting Port Number} for example : SANDBOX-DavidG-3000
+3.	Edit the .env file and put the wanted port mapping for the modules starting with the port number in the folder name.(for default ports don’t change anything.)
+4.	Run ./sandbox up
+5.	Have fun.
 
 In order to run multiple sandboxes on the same machine: 
 1.	Copy the cloned folder to a new folder.
-2.	Change the port mappings to new ports that will not overlap previous sandboxes already running.
-3.	Run ./sandbox up
-
+2.  Rename directory to the convention of SANDBOX-{UserName}-{Starting Port Number} for example : SANDBOX-DavidG-3000
+3.	Change the port mappings on the .env file to new ports that will not overlap previous sandboxes already running. starting with the port number in the folder name.
+4.	Run ./sandbox up
 
 # TICK Sandbox
 
@@ -54,3 +55,4 @@ To get started just run `./sandbox up`. You browser will open two tabs:
 
 .env the container ports can be configured in the .env file,
 also it is possible to run many instances of this on the same server as long as you run it from a different directory and make sure the ports are not overlapping.
+
